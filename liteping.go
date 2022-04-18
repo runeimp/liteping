@@ -1,4 +1,4 @@
-// Package fastping is an ICMP ping library inspired by AnyEvent::FastPing Perl
+// Package liteping is an ICMP ping library inspired by AnyEvent::FastPing Perl
 // module to send ICMP ECHO REQUEST packets quickly. Original Perl module is
 // available at
 // http://search.cpan.org/~mlehmann/AnyEvent-FastPing-2.01/
@@ -7,7 +7,7 @@
 //
 // Here is an example:
 //
-//	p := fastping.NewPinger()
+//	p := liteping.NewPinger()
 //	ra, err := net.ResolveIPAddr("ip4:icmp", os.Args[1])
 //	if err != nil {
 //		fmt.Println(err)
@@ -35,7 +35,7 @@
 //
 //	sudo go test
 //
-package fastping
+package liteping
 
 import (
 	"errors"

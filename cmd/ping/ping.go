@@ -10,7 +10,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/tatsushid/go-fastping"
+	"github.com/runeimp/liteping"
 )
 
 type response struct {
@@ -39,7 +39,7 @@ func main() {
 		source = flag.Arg(1)
 	}
 
-	p := fastping.NewPinger()
+	p := liteping.NewPinger()
 	if useUDP {
 		p.Network("udp")
 	}

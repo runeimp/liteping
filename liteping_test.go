@@ -1,4 +1,4 @@
-package fastping
+package liteping
 
 import (
 	"net"
