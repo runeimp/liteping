@@ -1,5 +1,7 @@
-go-fastping
-===========
+liteping
+========
+
+liteping is a minor update to [go-fastping][] initially adding Go module support and hopefully a few updates.
 
 go-fastping is a Go language ICMP ping library, inspired by the `AnyEvent::FastPing`
 Perl module, for quickly sending ICMP ECHO REQUEST packets. Original Perl module
@@ -7,13 +9,17 @@ is available at http://search.cpan.org/~mlehmann/AnyEvent-FastPing-2.01/
 
 All original functions haven't been implemented yet.
 
-[![GoDoc](https://godoc.org/github.com/tatsushid/go-fastping?status.svg)](https://godoc.org/github.com/tatsushid/go-fastping)
+[![GoDoc](https://github.com/runeimp/liteping?status.svg)](https://github.com/runeimp/liteping)
 
-## Installation
 
-Install and update with `go get -u github.com/tatsushid/go-fastping`
+Installation
+------------
 
-## Examples
+Install and update with `go get -u github.com/runeimp/liteping`
+
+
+Examples
+--------
 
 Import this package and write
 
@@ -43,12 +49,21 @@ passed, it calls the "idle" callback. For more details,
 refer [to the godoc][godoc], and if you need more examples,
 please see "cmd/ping/ping.go".
 
-## Caution
+
+Caution
+-------
+
 This package implements ICMP ping using both raw socket and UDP. If your program
 uses this package in raw socket mode, it needs to be run as a root user.
 
-## License
-go-fastping is under MIT License. See the [LICENSE][license] file for details.
 
-[godoc]: http://godoc.org/github.com/tatsushid/go-fastping
-[license]: https://github.com/tatsushid/go-fastping/blob/master/LICENSE
+License
+-------
+
+go-fastping is under MIT License. See the [LICENSE][License] file for details.
+
+
+
+[godoc]: http://godoc.org/github.com/runeimp/liteping
+[License]: /blob/master/LICENSE
+[go-fastping]: https://github.com/tatsushid/go-fastping
