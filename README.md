@@ -9,8 +9,6 @@ is available at http://search.cpan.org/~mlehmann/AnyEvent-FastPing-2.01/
 
 All original functions haven't been implemented yet.
 
-[![GoDoc](https://github.com/runeimp/liteping?status.svg)](https://github.com/runeimp/liteping)
-
 
 Installation
 ------------
@@ -24,7 +22,7 @@ Examples
 Import this package and write
 
 ```go
-p := fastping.NewPinger()
+p := liteping.NewPinger()
 ra, err := net.ResolveIPAddr("ip4:icmp", os.Args[1])
 if err != nil {
 	fmt.Println(err)
@@ -46,7 +44,7 @@ if err != nil {
 The example sends an ICMP packet and waits for a response. If it receives a
 response, it calls the "receive" callback. After that, once MaxRTT time has
 passed, it calls the "idle" callback. For more details,
-refer [to the godoc][godoc], and if you need more examples,
+refer to the code, and if you need more examples,
 please see "cmd/ping/ping.go".
 
 
@@ -60,7 +58,7 @@ uses this package in raw socket mode, it needs to be run as a root user.
 License
 -------
 
-go-fastping is under MIT License. See the [LICENSE][License] file for details.
+liteping is under MIT License. See the [LICENSE][License] file for details.
 
 
 
